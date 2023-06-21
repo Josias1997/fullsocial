@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "clean": "turbo clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "turbo": "^1.9.3"
+  },
+  "packageManager": "npm@9.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@gorhom/bottom-sheet": "^4.4.6",
+    "expo-image": "~1.0.1"
+  }
+}
